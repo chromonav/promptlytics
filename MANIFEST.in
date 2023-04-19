@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include promptlytics *.css
+recursive-include promptlytics *.csv
+recursive-include promptlytics *.html
+recursive-include promptlytics *.ico
+recursive-include promptlytics *.js
+recursive-include promptlytics *.json
+recursive-include promptlytics *.md
+recursive-include promptlytics *.png
+recursive-include promptlytics *.py
+recursive-include promptlytics *.svg
+recursive-include promptlytics *.txt
+recursive-exclude promptlytics *.pyc
