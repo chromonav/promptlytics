@@ -199,3 +199,5 @@ app_license = "Prop"
 # auth_hooks = [
 #	"promptlytics.auth.validate"
 # ]
+
+website_route_rules = [{'from_route': '/promptlytics-dashboard/<path:app_path>', 'to_route': 'promptlytics-dashboard'},]

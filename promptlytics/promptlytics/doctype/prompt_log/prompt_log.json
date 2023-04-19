@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-19 16:58:30.804323",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "prompt",
+  "column_break_szr8",
+  "response",
+  "section_break_lbms",
+  "group"
+ ],
+ "fields": [
+  {
+   "columns": 6,
+   "fieldname": "prompt",
+   "fieldtype": "JSON",
+   "label": "Prompt"
+  },
+  {
+   "columns": 5,
+   "fieldname": "response",
+   "fieldtype": "JSON",
+   "label": "Response"
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Data",
+   "label": "Group"
+  },
+  {
+   "fieldname": "column_break_szr8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lbms",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-19 18:43:07.089296",
+ "modified_by": "Administrator",
+ "module": "Promptlytics",
+ "name": "Prompt Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Promptlytics Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

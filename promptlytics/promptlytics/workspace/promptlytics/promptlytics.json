@@ -1,0 +1,54 @@
+{
+ "charts": [
+  {
+   "chart_name": "Prompt Executions",
+   "label": "Prompt Executions "
+  }
+ ],
+ "content": "[{\"id\":\"78ywJ0JWpC\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Promptlytics</span>\",\"col\":12}},{\"id\":\"9pEHHX4iPd\",\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"Promptlytics Onboarding\",\"col\":12}},{\"id\":\"ozvImVFFOq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Prompt Library\",\"col\":3}},{\"id\":\"6ulZa1MrNz\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Prompt History\",\"col\":3}},{\"id\":\"6cOrZoAUFX\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Prompt Executions \",\"col\":12}}]",
+ "creation": "2023-04-19 18:44:25.626236",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "message-1",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Promptlytics",
+ "links": [],
+ "modified": "2023-04-19 19:03:35.201697",
+ "modified_by": "Administrator",
+ "module": "Promptlytics",
+ "name": "Promptlytics",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Promptlytics Admin"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Prompt Library",
+   "link_to": "Prompt",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Prompt History",
+   "link_to": "Prompt Log",
+   "type": "DocType"
+  }
+ ],
+ "title": "Promptlytics"
+}

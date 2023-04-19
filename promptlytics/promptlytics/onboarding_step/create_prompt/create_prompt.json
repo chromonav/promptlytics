@@ -1,0 +1,18 @@
+{
+ "action": "Create Entry",
+ "creation": "2023-04-19 19:03:14.774044",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2023-04-19 19:03:53.357273",
+ "modified_by": "Administrator",
+ "name": "Create Prompt",
+ "owner": "Administrator",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Create a Prompt",
+ "validate_action": 1
+}
