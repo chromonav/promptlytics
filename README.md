@@ -4,4 +4,4 @@ Prompt Management and Analytics Platform
 
 #### License
 
-Prop
+MIT
