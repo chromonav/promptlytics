@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:id",
+ "autoname": "field:title",
  "creation": "2023-04-19 16:51:06.945835",
  "default_view": "List",
  "doctype": "DocType",
@@ -9,8 +9,6 @@
  "engine": "InnoDB",
  "field_order": [
   "title",
-  "column_break_hnvi",
-  "id",
   "section_break_beed",
   "content"
  ],
@@ -18,22 +16,13 @@
   {
    "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Title"
+   "label": "Title",
+   "unique": 1
   },
   {
    "fieldname": "content",
    "fieldtype": "Long Text",
    "label": "Content"
-  },
-  {
-   "fieldname": "id",
-   "fieldtype": "Data",
-   "label": "ID",
-   "unique": 1
-  },
-  {
-   "fieldname": "column_break_hnvi",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "section_break_beed",
@@ -42,7 +31,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-19 17:00:23.009600",
+ "modified": "2023-04-24 13:57:18.072344",
  "modified_by": "Administrator",
  "module": "Promptlytics",
  "name": "Prompt",
