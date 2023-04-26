@@ -5,6 +5,8 @@ import frappe
 @frappe.whitelist()
 def track(**kwargs):
     try:
+        kwargs.pop('api_key')
+        kwargs.pop('cmd')
         doc = frappe.new_doc('Prompt Log')
         doc.function_name = kwargs.get("function_name")
         doc.provider_type = kwargs.get("provider_type")
