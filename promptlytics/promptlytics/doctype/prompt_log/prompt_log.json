@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:PT{####}",
  "creation": "2023-04-19 16:58:30.804323",
  "default_view": "List",
  "doctype": "DocType",
@@ -11,7 +12,15 @@
   "column_break_szr8",
   "response",
   "section_break_lbms",
-  "group"
+  "group",
+  "function_name",
+  "provider_type",
+  "model_details_section",
+  "model",
+  "request_timeout",
+  "max_tokens",
+  "stream",
+  "temperature"
  ],
  "fields": [
   {
@@ -38,14 +47,54 @@
   {
    "fieldname": "section_break_lbms",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "function_name",
+   "fieldtype": "Data",
+   "label": "Function Name"
+  },
+  {
+   "fieldname": "provider_type",
+   "fieldtype": "Data",
+   "label": "Provider Type"
+  },
+  {
+   "fieldname": "model_details_section",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_timeout",
+   "fieldtype": "Data",
+   "label": "Request Timeout"
+  },
+  {
+   "fieldname": "max_tokens",
+   "fieldtype": "Data",
+   "label": "Max Tokens"
+  },
+  {
+   "fieldname": "stream",
+   "fieldtype": "Data",
+   "label": "Stream"
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Data",
+   "label": "temperature"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-19 18:43:07.089296",
+ "modified": "2023-04-24 17:29:55.945135",
  "modified_by": "Administrator",
  "module": "Promptlytics",
  "name": "Prompt Log",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
