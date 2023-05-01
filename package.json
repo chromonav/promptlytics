@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "Prompt Management and Analytics Platform",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cd promptlytics-dashboard && yarn dev",
-    "build": "cd promptlytics-dashboard && yarn build"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC"
