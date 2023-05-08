@@ -1,15 +1,18 @@
 import json
 import frappe
+from datetime import datetime
 
 # API method: api/method/promptlytics.api.track
 @frappe.whitelist()
 def track(**kwargs):
     try:
-        kwargs.pop('api_key')
         kwargs.pop('cmd')
         doc = frappe.new_doc('Prompt Log')
         doc.function_name = kwargs.get("function_name")
         doc.provider_type = kwargs.get("provider_type")
+        args = kwargs.get('args')
+        doc.prompt_role = args[0].get("role")
+        doc.prompt_content = args[0].get("content")
         model_kwargs = kwargs.get("kwargs")
         doc.model = model_kwargs.get("model")
         doc.request_timeout = model_kwargs.get("request_timeout")
@@ -18,7 +21,15 @@ def track(**kwargs):
         doc.temperature = model_kwargs.get("temperature")
         doc.group = kwargs.get("tags")
         doc.prompt = json.dumps(kwargs, indent=4)
-        doc.response = json.dumps(kwargs.get('request_response'), indent=4)
+        response = kwargs.get('request_response')
+        doc.response = json.dumps(response, indent=4)
+        doc.response_role = response[0].get("role")
+        doc.response_content = response[0].get("content")
+
+        request_start_time = float(kwargs["request_start_time"])
+        request_end_time = float(kwargs["request_end_time"])
+        doc.request_start_time = datetime.fromtimestamp(request_start_time)
+        doc.request_end_time = datetime.fromtimestamp(request_end_time)
         doc.insert()
         return "Success"
     except Exception as e:

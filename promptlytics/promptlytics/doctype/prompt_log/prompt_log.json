@@ -9,18 +9,24 @@
  "engine": "InnoDB",
  "field_order": [
   "prompt",
-  "column_break_szr8",
+  "column_break_6ksue",
   "response",
   "section_break_lbms",
-  "group",
+  "prompt_role",
+  "prompt_content",
   "function_name",
   "provider_type",
-  "model_details_section",
-  "model",
   "request_timeout",
+  "model",
   "max_tokens",
   "stream",
-  "temperature"
+  "temperature",
+  "group",
+  "column_break_szr8",
+  "response_role",
+  "response_content",
+  "request_start_time",
+  "request_end_time"
  ],
  "fields": [
   {
@@ -59,10 +65,6 @@
    "label": "Provider Type"
   },
   {
-   "fieldname": "model_details_section",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "request_timeout",
    "fieldtype": "Data",
    "label": "Request Timeout"
@@ -86,11 +88,47 @@
    "fieldname": "model",
    "fieldtype": "Data",
    "label": "Model Name"
+  },
+  {
+   "fieldname": "prompt_role",
+   "fieldtype": "Select",
+   "label": "Role",
+   "options": "user\nsystem\nassistant"
+  },
+  {
+   "fieldname": "prompt_content",
+   "fieldtype": "Text",
+   "label": "Content"
+  },
+  {
+   "fieldname": "response_role",
+   "fieldtype": "Select",
+   "label": "Role",
+   "options": "assistant\nuser"
+  },
+  {
+   "fieldname": "response_content",
+   "fieldtype": "Text",
+   "label": "Content"
+  },
+  {
+   "fieldname": "column_break_6ksue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_start_time",
+   "fieldtype": "Datetime",
+   "label": "Request Start Time"
+  },
+  {
+   "fieldname": "request_end_time",
+   "fieldtype": "Datetime",
+   "label": "Request End Time"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-24 17:29:55.945135",
+ "modified": "2023-05-05 18:36:30.827819",
  "modified_by": "Administrator",
  "module": "Promptlytics",
  "name": "Prompt Log",
